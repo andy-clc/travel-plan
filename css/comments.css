@@ -1,0 +1,237 @@
+#output ul>li>ul {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.avatar_image {
+    border-radius: 50%;
+    width: 50px;
+}
+
+/* #output ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+#output li {
+    list-style-type: none;
+    border-left: 2px solid #000;
+    margin-left: 1em;
+}
+
+#output li:first-child {
+    padding-left: 5px;
+    position: relative;
+}
+
+#output li:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2px;
+    bottom: 50%;
+    width: 0.75em;
+    border: 2px solid #ababab;
+    border-top: 0 none transparent;
+    border-right: 0 none transparent;
+}
+
+#output ul>li:last-child {
+    border-left: 2px solid transparent;
+}
+*/
+span.commet-row-label {
+    font-style: italic;
+}
+
+span.posted-by {
+    color: #09F;
+}
+
+.comment-info {
+    font-size: 0.8em;
+}
+
+.comment-text {
+    margin: 10px 0px;
+}
+
+.btn-reply {
+    font-size: 0.8em;
+    text-decoration: underline;
+    color: #888787;
+    cursor: pointer;
+}
+
+#comment-message {
+    margin-left: 20px;
+    color: #189a18;
+    display: none;
+}
+
+.inline-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 767.8px) {
+    .inline-row {
+        display: block;
+    }
+
+    #output ul>li>ul {
+        margin-left: 5px;
+    }
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url(' https://cssanimation.rocks/images/posts/steps/heart.png') no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+}
+
+.heart.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}
+
+.placement {
+    position: absolute;
+    bottom: -30px;
+    left: 160px;
+}
+
+.like_number_show {
+    position: absolute;
+    bottom: 35px;
+    font-size: 16px;
+    color: #ed5f5e;
+    font-weight: 1000;
+    right: -10px;
+    text-shadow: 1px 0 black;
+}
+
+.report_btn {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#recipient_name,
+#commentid {
+    display: inline-block;
+    width: 50%;
+}
+
+.blog-post-info .comments {
+    float: right;
+}
+
+.blog-post-info .comments a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.blog-post-info .comments a:hover {
+    text-decoration: none;
+    color: #ed5f5e;
+}
+
+.entriesContainer {
+    margin-top: 40px;
+    max-height: 1000px;
+    overflow: scroll;
+}
+
+.entriesContainer .comments-list {
+    padding: 0;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.entriesContainer .comments-list .img {
+    border: 2px solid #ed5f5e;
+    color: #ed5f5e;
+    float: left;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    line-height: 31px;
+    /* margin-top: 5px; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.entriesContainer .comments-list .commentContent {
+    margin-bottom: 15px;
+    margin-left: 70px;
+}
+
+.entriesContainer .comments-list .commentContent p.expert {
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+.entriesContainer .comments-list .commentContent .date a {
+    color: #ed5f5e;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.comment {
+    /* padding: 10px 10px 0px; */
+    position: relative;
+    /* background: #f7f7f7; */
+    box-shadow: px 0px 5px;
+    margin-bottom: 5px;
+}
+
+.comment.children {
+    margin-top: 30px;
+}
+
+.comments .expert a {
+    display: inline-block;
+    text-decoration: underline dotted;
+}
+
+.comments .author a {
+    color: #ffc107;
+}
+
+.comments .replys {
+    margin-left: 10px;
+    list-style: none;
+}
+
+.comments .replys.children {
+    margin-left: 80px;
+}
+
+/* .comments .reply-btn {
+    float: right;
+  } */
+
+.comments .reply-btn a {
+    display: inline-block;
+    font-weight: 600;
+    padding: 8px 12px;
+    color: #ed5f5e;
+    font-size: 16px;
+    font-weight: 1000;
+    position: relative;
+    text-shadow: 1px 0 black;
+}
